@@ -29,5 +29,4 @@ public class Genre {
    public ArrayList<Video> getRelatedVideos(){
       return videos;
    }
-//asdfadsfasdfa
 }
