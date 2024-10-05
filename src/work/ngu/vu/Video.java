@@ -13,13 +13,12 @@ public class Video extends Media {
     }
 
     public String getTitle() {
-        return title;
-    }
-    public int getDuration() {
-        return duration;
+        return "Video." + title;
     }
     public Genre getGenre() {
         return genre;
     }
-
+    public int getDuration() {
+        return  duration;
+    }
 }

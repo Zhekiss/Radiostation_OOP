@@ -7,11 +7,13 @@ public class Genre {
    private String name;
    private String description;
    private ArrayList<Video> videos;
+   public static int genre_count;
 
    public Genre(String name, String description) {
       this.name = name;
       this.description = description;
       this.videos = new ArrayList<>();
+      genre_count++;
    }
 
    public String getName() {
@@ -28,5 +30,8 @@ public class Genre {
 
    public ArrayList<Video> getRelatedVideos(){
       return videos;
+   }
+   public int howManyGenresInList(){
+      return genre_count;
    }
 }
