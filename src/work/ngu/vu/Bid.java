@@ -4,11 +4,21 @@ public class Bid {
     private double bidAmount;
     private String user;
     private Video video;
+    private Audio audio;
+    public static int allBidCount = 0;
 
     public Bid(double bidAmount, String user, Video video) {
         this.bidAmount = bidAmount;
         this.user = user;
         this.video = video;
+        allBidCount++;
+    }
+
+    public Bid(double bidAmount, String user, Audio audio) {
+        this.bidAmount = bidAmount;
+        this.user = user;
+        this.audio = audio;
+        allBidCount++;
     }
 
     public double getBidAmount() {
@@ -23,7 +33,4 @@ public class Bid {
         return video;
     }
 
-    public float updateBidAmount(float newBid) {
-        return newBid;
-    }
 }

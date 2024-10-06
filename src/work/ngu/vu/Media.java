@@ -17,4 +17,12 @@ public class Media {
         return genre;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public  void setGenre(Genre genre) {
+        this.genre = genre;
+    }
+
 }
