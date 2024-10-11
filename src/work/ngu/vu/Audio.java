@@ -1,17 +1,12 @@
 package work.ngu.vu;
 
 public class Audio extends Media {
-    private int duration;
-
-    //initialiazing block
-    {
-        duration = 0;
-    }
 
     public Audio(String title, Genre genre, int duration) {
         super(title, genre, duration);
     }
 
+    //getters & setters
     public Genre getGenre() {
         return super.getGenre();
     }
@@ -28,6 +23,7 @@ public class Audio extends Media {
         super.setTitle(title);
     }
 
+    //other methods
     public int getDuration() {
         return super.getDuration();
     }

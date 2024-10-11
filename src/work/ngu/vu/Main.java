@@ -50,5 +50,7 @@ public class Main {
 
         System.out.println(Genre.genre_count);
         System.out.println(Bid.allBidCount);
+
+        System.out.println(video3.getDuration());
     }
 }
