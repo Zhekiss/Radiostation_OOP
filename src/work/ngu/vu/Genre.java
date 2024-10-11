@@ -7,7 +7,7 @@ public class Genre {
    private final String name;
    private final String description;
    private static ArrayList<Video> videos;
-   private static final ArrayList<Audio> audios;
+   private static ArrayList<Audio> audios;
    public static int genre_count;
 
    static {
@@ -15,17 +15,21 @@ public class Genre {
       audios = new ArrayList<>();
       genre_count = 0;
    }
+   //non_static
+   {
+      genre_count++;
+   }
 
    public Genre(String name, String description) {
       this.name = name;
       this.description = description;
-      videos = new ArrayList<>();
-      genre_count++;
    }
 
    public String getName() {
       return name;
    }
+
+
 
    public String getDescription() {
       return description;
@@ -37,6 +41,10 @@ public class Genre {
 
    public void addAudio(Audio audio) {
       audios.add(audio);
+   }
+
+   public static int howManyGenres(){
+      return genre_count;
    }
 
 
@@ -64,7 +72,5 @@ public class Genre {
          System.out.println();
       }
    }
-   public static int howManyGenres(){
-      return genre_count;
-   }
+
 }

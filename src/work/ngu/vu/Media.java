@@ -11,6 +11,10 @@ public class Media {
     static {
         mediaCount = 0;
     }
+    //non_static
+    {
+        mediaCount++;
+    }
 
     public Media(String title, Genre genre, int duration) {
         this.title = title;
