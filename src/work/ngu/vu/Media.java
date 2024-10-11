@@ -3,10 +3,24 @@ package work.ngu.vu;
 public class Media {
     private String title;
     private Genre genre;
+    private int duration;
+    public static final int MAX_DURATION = 600;
+    private static int mediaCount;
 
-    public Media() {
+    //initialiazing block
+    static {
+        mediaCount = 0;
+    }
+
+    public Media(String title, Genre genre, int duration) {
         this.title = title;
         this.genre = genre;
+        if (duration <0 || duration > MAX_DURATION) {
+            System.out.println("Unavailable duration! Default = 0!");
+            this.duration = 0;
+        } else {
+            this.duration = duration;
+        }
     }
 
     public String getTitle() {
@@ -25,4 +39,7 @@ public class Media {
         this.genre = genre;
     }
 
+    public int getDuration() {
+        return duration;
+    }
 }

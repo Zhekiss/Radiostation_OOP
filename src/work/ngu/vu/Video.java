@@ -1,47 +1,35 @@
 package work.ngu.vu;
 
 public class Video extends Media {
-    private String title;
     private int duration;
-    private Genre genre;
+
+    //initialiazing block
     {
         duration = 0;
     }
 
-    public Video(String title, int duration, Genre genre) {
-        this.title = title;
-        this.duration = duration;
-        this.genre = genre;
+    public Video(String title, Genre genre, int duration) {
+        super(title,genre,duration);
     }
 
-    @Override
+
     public String getTitle() {
-        return "Video." + title;
+        return super.getTitle();
     }
 
-    @Override
     public void setTitle(String title) {
-        this.title = title;
+        super.setTitle(title);
     }
 
-    @Override
     public Genre getGenre() {
-        return genre;
+        return super.getGenre();
     }
 
-    @Override
     public void setGenre(Genre genre) {
-        this.genre = genre;
+        super.setGenre(genre);
     }
 
     public int getDuration() {
-        return  duration;
+        return super.getDuration();
     }
-
-    public static void printVideoInfo(Video video) {
-        System.out.println("Title: " + video.title);
-        System.out.println("Genre: " + video.genre);
-        System.out.println("Duration: " + video.duration);
-    }
-
 }

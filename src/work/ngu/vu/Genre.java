@@ -4,21 +4,22 @@ package work.ngu.vu;
 import java.util.ArrayList;
 
 public class Genre {
-   private String name;
-   private String description;
+   private final String name;
+   private final String description;
    private static ArrayList<Video> videos;
-   private static ArrayList<Audio> audios;
-   public static int genre_count = 0;
+   private static final ArrayList<Audio> audios;
+   public static int genre_count;
 
    static {
       videos = new ArrayList<>();
       audios = new ArrayList<>();
+      genre_count = 0;
    }
 
    public Genre(String name, String description) {
       this.name = name;
       this.description = description;
-      this.videos = new ArrayList<>();
+      videos = new ArrayList<>();
       genre_count++;
    }
 

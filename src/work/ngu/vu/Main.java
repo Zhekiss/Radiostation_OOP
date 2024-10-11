@@ -6,13 +6,13 @@ public class Main {
         Genre comedy = new Genre("Comedy", "something funny");
         Genre rnb = new Genre("R&B","somthing vibing");
 
-        Video video1 = new Video("screaming potato", 60, rock);
-        Video video2 = new Video("haleluya", 50, comedy);
-        Video video3 = new Video("chaplin",300, comedy);
-        Video video4 = new Video("something hard", 70, rock);
+        Video video1 = new Video("screaming potato", rock, 60);
+        Video video2 = new Video("haleluya", comedy, 50);
+        Video video3 = new Video("chaplin",comedy, 300);
+        Video video4 = new Video("something hard", rock, 700);
 
-        Audio audio1 = new Audio("Keshi", rnb);
-        Audio audio2 = new Audio("knights", rock);
+        Audio audio1 = new Audio("Keshi", rnb, 180);
+        Audio audio2 = new Audio("knights", rock, 180);
 
         rock.addVideo(video1);
         rock.addVideo(video4);
