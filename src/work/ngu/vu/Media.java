@@ -20,7 +20,7 @@ public class Media {
         this.title = title;
         this.genre = genre;
         if (duration <0 || duration > MAX_DURATION) {
-            System.out.println("Unavailable duration! Default = 0!");
+            System.out.println( title + "  has reached limited duration! Max duration is set to 600 seconds!");
             this.duration = 0;
         } else {
             this.duration = duration;
