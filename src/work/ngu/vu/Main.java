@@ -5,14 +5,14 @@ public class Main {
         //GENRES
         Genre rock = new Genre("Rock", "something manly");
         Genre comedy = new Genre("Comedy", "something funny");
-        Genre pop = new Genre("R&B","somthing vibing");
+        Genre pop = new Genre("Pop","Viral");
         {
             System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         }
         //VIDEOS
         Video video1 = new Video("screaming potato", rock, 60);
         Video video2 = new Video("haleluya", comedy, 50);
-        Video video3 = new Video("chaplin",comedy, 300);
+        Video video3 = new Video("Hay Trao Cho Anh",pop, 300);
         Video video4 = new Video("something hard", rock, 700);
 
         //AUDIOS
@@ -29,7 +29,7 @@ public class Main {
         rock.addVideo(video1);
         rock.addVideo(video4);
         comedy.addVideo(video2);
-        comedy.addVideo(video3);
+        pop.addVideo(video3);
 
         //to List of Audios GENRES
         rock.addAudio(audio2);
@@ -53,6 +53,8 @@ public class Main {
 
         System.out.println(video3.getDuration());
 
-        System.out.println(Audio.a);
+        audio3.all_Info();
+        System.out.println();
+        video3.all_Info();
     }
 }

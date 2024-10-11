@@ -47,6 +47,10 @@ public class Genre {
       return genre_count;
    }
 
+   @Override
+   public String toString() {
+      return name;
+   }
 
    public void getRelatedVideos(){
       if(!videos.isEmpty()) {

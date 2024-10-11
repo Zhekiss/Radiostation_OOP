@@ -32,6 +32,6 @@ public class Audio extends Media {
     public void all_Info() {
         System.out.println("This audio is called: " + getTitle());
         System.out.println("This audios duration is: " + getDuration());
-        System.out.println("This audios genre is: " + getGenre());
+        System.out.println("This audios genre is: " + getGenre().toString());
     }
 }
