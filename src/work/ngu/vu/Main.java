@@ -52,5 +52,7 @@ public class Main {
         System.out.println(Bid.allBidCount);
 
         System.out.println(video3.getDuration());
+
+        System.out.println(Audio.a);
     }
 }

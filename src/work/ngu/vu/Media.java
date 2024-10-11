@@ -42,8 +42,11 @@ public class Media {
     public  void setGenre(Genre genre) {
         this.genre = genre;
     }
-
+    //other methods
     public int getDuration() {
         return duration;
+    }
+
+    public void all_Info() {
     }
 }

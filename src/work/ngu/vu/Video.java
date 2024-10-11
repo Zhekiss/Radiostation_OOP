@@ -27,4 +27,10 @@ public class Video extends Media {
     public int getDuration() {
         return super.getDuration();
     }
+    @Override
+    public void all_Info() {
+        System.out.println("This video is called: " + getTitle());
+        System.out.println("This videos duration is: " + getDuration());
+        System.out.println("This videos genre is: " + getGenre());
+    }
 }

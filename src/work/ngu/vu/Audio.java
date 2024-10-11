@@ -27,4 +27,11 @@ public class Audio extends Media {
     public int getDuration() {
         return super.getDuration();
     }
+
+    @Override
+    public void all_Info() {
+        System.out.println("This audio is called: " + getTitle());
+        System.out.println("This audios duration is: " + getDuration());
+        System.out.println("This audios genre is: " + getGenre());
+    }
 }
